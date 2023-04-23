@@ -43,7 +43,7 @@
     <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
   </head>
 
-  <body>
+  <body id="top">
     <!--
       # PRELOADER
     -->
@@ -77,7 +77,7 @@
           <span class="span">Daily : 8.00 am to 10.00 pm</span>
         </div>
 
-        <a href="tel:+11234567890" class="topbar-item">
+        <a href="tel:+11234567890" class="topbar-item link">
           <div class="icon">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -87,7 +87,7 @@
 
         <div class="separator"></div>
 
-        <a href="mailto:booking@restaurant.com" class="topbar-item">
+        <a href="mailto:booking@restaurant.com" class="topbar-item link">
           <div class="icon">
             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -511,8 +511,9 @@
               <a
                 href="tel:+804001234567"
                 class="body-1 contact-number hover-underline"
-                >+80 (400) 123 4567</a
               >
+                +80 (400) 123 4567
+              </a>
 
               <a href="#" class="btn btn-primary">
                 <span class="text text-1">Read More</span>
@@ -675,11 +676,11 @@
                     <div class="title-wrapper">
                       <h3 class="title-3">
                         <a href="#" class="card-title">Greek Salad</a>
-
-                        <span class="badge label-1">Seasonal</span>
-
-                        <span class="span title-2">$25.50</span>
                       </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
                     </div>
 
                     <p class="card-text label-1">
@@ -710,11 +711,11 @@
                     <div class="title-wrapper">
                       <h3 class="title-3">
                         <a href="#" class="card-title">Lasagne</a>
-
-                        <span class="badge label-1">Seasonal</span>
-
-                        <span class="span title-2">$40.00</span>
                       </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$40.00</span>
                     </div>
 
                     <p class="card-text label-1">
@@ -745,9 +746,9 @@
                     <div class="title-wrapper">
                       <h3 class="title-3">
                         <a href="#" class="card-title">Butternut Pumpkin</a>
-
-                        <span class="span title-2">$10.00</span>
                       </h3>
+
+                      <span class="span title-2">$10.00</span>
                     </div>
 
                     <p class="card-text label-1">
@@ -778,11 +779,11 @@
                     <div class="title-wrapper">
                       <h3 class="title-3">
                         <a href="#" class="card-title">Tokusen Wagyu</a>
-
-                        <span class="badge label-1">New</span>
-
-                        <span class="span title-2">$39.00</span>
                       </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
                     </div>
 
                     <p class="card-text label-1">
@@ -813,9 +814,9 @@
                     <div class="title-wrapper">
                       <h3 class="title-3">
                         <a href="#" class="card-title">Olivas Rellenas</a>
-
-                        <span class="span title-2">$25.00</span>
                       </h3>
+
+                      <span class="span title-2">$25.00</span>
                     </div>
 
                     <p class="card-text label-1">
@@ -846,9 +847,9 @@
                     <div class="title-wrapper">
                       <h3 class="title-3">
                         <a href="#" class="card-title">Opu Fish</a>
-
-                        <span class="span title-2">$49.00</span>
                       </h3>
+
+                      <span class="span title-2">$49.00</span>
                     </div>
 
                     <p class="card-text label-1">
@@ -931,6 +932,7 @@
         <!--
           # Reservation
         -->
+
         <section class="reservation">
           <div class="container">
             <div class="form reservation-form bg-black-10">
@@ -1172,7 +1174,7 @@
             </ul>
 
             <img
-              src="./assets/images/shape-1.png"
+              src="./assets/images/shape-7.png"
               width="208"
               height="178"
               loading="lazy"
@@ -1308,8 +1310,8 @@
     </main>
 
     <!--
-          # Footer
-        -->
+      # Footer
+    -->
 
     <footer
       class="footer section has-bg-image text-center"
@@ -1317,7 +1319,7 @@
     >
       <div class="container">
         <div class="footer-top grid-list">
-          <div class="footer-brand">
+          <div class="footer-brand has-before has-after">
             <a href="#" class="logo">
               <img
                 src="./assets/images/logo.svg"
@@ -1446,6 +1448,19 @@
         </div>
       </div>
     </footer>
+
+    <!--
+      # Back to top
+    -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
     <!--
       - Custom JS link
